@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "max-classes-per-file": false,
+    "no-conditional-assignment": false,
+    "no-string-literal": false,
+    "member-ordering": false,
+    "object-literal-sort-keys": false,
+    "no-var-requires": false,
+    "no-console": false,
+    "curly": [true, "ignore-same-line"],
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
+    "indent": [true, "spaces", 2]
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.ts"
+    ]
+  }
+}

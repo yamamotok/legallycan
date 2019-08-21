@@ -1,0 +1,36 @@
+{
+  "name": "legallycan",
+  "version": "0.0.0",
+  "description": "legally, behavior based authorization",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "build-watch": "npx tsc -w",
+    "tslint": "npx tslint -c tslint.json -p tsconfig.json",
+    "tslint-fix": "npx tslint -c tslint.json -p tsconfig.json --fix",
+    "test": "npx jest --runInBand --detectOpenHandles",
+    "test-verbose": "npx jest --runInBand --coverage --verbose --detectOpenHandles",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run tslint-fix",
+    "preversion": "npm run lint",
+    "version": "npm run tslint-fix && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "legally"
+  ],
+  "author": "Keisuke Yamamoto",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.19.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}

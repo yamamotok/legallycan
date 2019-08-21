@@ -1,0 +1,38 @@
+# Secrets
+.env
+
+# Ignore built ts files
+dist/**/*
+
+# Dependency directory
+node_modules
+
+# Temp directory
+/tmp
+
+# Test report
+/coverage
+
+# Editors
+.idea
+*.iml
+.vscode
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Others
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+*.tmp
+
+
+
+
+
