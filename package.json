@@ -1,7 +1,8 @@
 {
   "name": "legallycan",
-  "version": "0.0.0",
-  "description": "legally, behavior based authorization",
+  "version": "0.1.0",
+  "description": "legallycan, behavior-based authorization utility",
+  "repository": "https://github.com/yamamotok/legallycan",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -18,7 +19,7 @@
     "postversion": "git push && git push --tags"
   },
   "keywords": [
-    "legally"
+    "authorization", "legal"
   ],
   "author": "Keisuke Yamamoto",
   "license": "MIT",
