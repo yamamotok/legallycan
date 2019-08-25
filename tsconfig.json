@@ -14,6 +14,7 @@
     "allowJs": false,
     "strict": true,
     "declaration": true,
+    "newLine": "LF",
     "lib": [
       "es6",
       "esnext.asynciterable"

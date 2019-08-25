@@ -1,3 +1,4 @@
+import {Legal} from './Legal';
 import {LegalCheck} from './LegalCheck';
 
 
@@ -9,3 +10,7 @@ import {LegalCheck} from './LegalCheck';
 export function legally<T>(principal: T) {
   return new LegalCheck<T>(principal);
 }
+
+
+export {Legal} from './Legal';
+export {LegalCheck} from './LegalCheck';
