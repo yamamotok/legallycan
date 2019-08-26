@@ -16,7 +16,7 @@ legally(subject).can(DoSomething).check()
   });
 ```
 
-## Examples
+## Examples (in TypeScript)
 
 ### Authorization
 
@@ -71,7 +71,5 @@ await legally(adminUser).can(ViewProfile).of(normalUserA).check()
 
 ## License
 
-MIT
-
+MIT  
 (c) Keisuke Yamamoto 2019  
-https://github.com/yamamotok
