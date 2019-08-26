@@ -2,7 +2,11 @@
   "name": "legallycan",
   "version": "0.1.2",
   "description": "legallycan, behavior-based authorization utility",
-  "repository": "https://github.com/yamamotok/legallycan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yamamotok/legallycan.git"
+  },
+  "homepage": "https://github.com/yamamotok/legallycan",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -14,14 +18,18 @@
     "test-verbose": "npx jest --runInBand --coverage --verbose --detectOpenHandles",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run tslint-fix",
-    "preversion": "npm run lint",
+    "preversion": "npm run tslint",
     "version": "npm run tslint-fix && git add -A src",
     "postversion": "git push && git push --tags"
   },
   "keywords": [
-    "authorization", "legal"
+    "authorization",
+    "typescript"
   ],
-  "author": "Keisuke Yamamoto",
+  "author": {
+    "name": "Keisuke Yamamoto",
+    "email": "keisuke@modelhouse.tech"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^24.0.18",
